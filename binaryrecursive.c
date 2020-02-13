@@ -3,7 +3,7 @@
 #include<time.h>
 
 
-int check(int arr[],int n,int k,int l,int h)
+int check(int arr[],int k,int l,int h)
 {
 while(l<=h)
 {
@@ -11,9 +11,9 @@ int m=(l+h)/2;
 if(arr[m]==k)
 return m;
 else if(arr[m]>k)
-check(arr,n,k,l,m-1);
+return check(arr,k,l,m-1);
 else
-check(arr,n,k,m+1,h);
+return check(arr,k,m+1,h);
 }
 return -1;
 
@@ -36,7 +36,7 @@ for(int i=0;i<n;i++)
 scanf("%d",&arr[i]);
 }
 start=clock();
-res=check(arr,n,key,l,h);
+res=check(arr,key,l,h);
 end=clock();
 timer=((double)(start-end)/CLOCKS_PER_SEC);
 if(res==-1)
