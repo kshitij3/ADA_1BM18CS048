@@ -1,7 +1,7 @@
 \\Incomplete
 #include<stdio.h>
 #include<stdlib.h>
-void selectionsort(int s[],int f[],int n)
+void sort(int s[],int f[],int n)
 {
 int temp,temp1,min;
 for(int i=0;i<n-1;i++)
@@ -22,8 +22,7 @@ for(int i=0;i<n-1;i++)
 f[min]=temp1;
      }
   }
-}
-}
+
 void main()
 {
 int n,s[100],f[100],flag=1,k=0,count[100],check[50],max=0,pos=0;
