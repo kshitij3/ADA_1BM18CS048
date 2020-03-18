@@ -1,4 +1,4 @@
-\\Incomplete
+
 #include<stdio.h>
 #include<stdlib.h>
 void sort(int s[],int f[],int n)
