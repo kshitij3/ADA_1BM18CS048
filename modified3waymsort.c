@@ -70,7 +70,6 @@ void mergeSort3Way(int gArray1[], int n1){
    int fArray1[n1];
    for(int i = 0; i < n1; i++)
    fArray1[i] = gArray1[i];
-   // sort function
    mergeSort3WayRec(fArray1, 0, n1, gArray1);
    for(int i = 0; i < n1; i++)
    gArray1[i] = fArray1[i];
