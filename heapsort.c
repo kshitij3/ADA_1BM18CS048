@@ -24,7 +24,7 @@ int main()
 	time = clock();
 	heapsort(a,n);
 	time = clock() - time;
-	printf("\nThe time required for heap sort is %d %d %d \n ",fixed,setprecision(7),(float)time/CLOCKS_PER_SEC);	
+	printf("\nThe time required for heap sort is %d \n ",(float)time/CLOCKS_PER_SEC);	
 	printf("\nThe sorted array is\n");
 	for(i=0;i<n;i++)
 		printf("%d \n",a[i]);
